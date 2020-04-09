@@ -285,6 +285,8 @@ tokei -t JSON,TOML,YAML,XML .
 
 <https://github.com/bootandy/dust>
 
+<https://github.com/conky5/eq>
+
 <https://github.com/sitkevij/hex>
 
 <https://github.com/sharkdp/hyperfine>
@@ -298,6 +300,8 @@ tokei -t JSON,TOML,YAML,XML .
 <https://github.com/meilisearch/MeiliSearch>
 
 <https://github.com/svenstaro/miniserve>
+
+<https://github.com/Y2Z/monolith>
 
 <https://github.com/nushell/nushell>
 
