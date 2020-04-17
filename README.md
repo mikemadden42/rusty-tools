@@ -287,6 +287,8 @@ tokei -t JSON,TOML,YAML,XML .
 
 <https://github.com/conky5/eq>
 
+<https://github.com/Edu4rdSHL/findomain>
+
 <https://github.com/sitkevij/hex>
 
 <https://github.com/sharkdp/hyperfine>
@@ -307,6 +309,8 @@ tokei -t JSON,TOML,YAML,XML .
 
 <https://github.com/dalance/procs>
 
+<https://github.com/phra/rustbuster>
+
 <https://github.com/lotabout/skim>
 
 <https://github.com/nelsonjchen/speedtest-rs>
@@ -316,5 +320,7 @@ tokei -t JSON,TOML,YAML,XML .
 <https://github.com/yewstack/yew>
 
 <https://github.com/cjbassi/ytop>
+
+<https://github.com/bvaisvil/zenith>
 
 <https://github.com/ajeetdsouza/zoxide>
