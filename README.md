@@ -315,6 +315,8 @@ tokei -t JSON,TOML,YAML,XML .
 
 <https://github.com/nelsonjchen/speedtest-rs>
 
+<https://github.com/starship/starship>
+
 <https://github.com/endgameinc/xori>
 
 <https://github.com/yewstack/yew>
