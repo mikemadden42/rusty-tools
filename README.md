@@ -1,6 +1,6 @@
 # rusty-tools
 
-## Resources
+## Organizations utilizing rust tools
 
 <https://discussion.fedoraproject.org/t/tools-applications-written-in-rust/1040>
 
@@ -16,7 +16,7 @@
 
 <https://www.zdnet.com/article/microsoft-opens-up-rust-inspired-project-verona-programming-language-on-github/>
 
-## Tools
+## Sample tools
 
 Many of these tools have similar, attractive themes:
 
@@ -65,8 +65,10 @@ bat -h
 
 bat ~/.zshrc
 
+# Show non-printable characters.
 bat -A /etc/hosts
 
+# Show content of an online script.
 curl -s https://sh.rustup.rs | bat
 curl -s https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bat
 ```
@@ -99,10 +101,14 @@ br
 ```bash
 exa --help
 
+# Display one entry per line.
 exa -1
 
+# Show hidden and 'dot' files.
 exa -a
 
+# Display extended file metadata as a table.
+# Sort newest files.
 exa -l -snew
 ```
 
@@ -111,17 +117,18 @@ exa -l -snew
 ```bash
 fd -h
 
+# Find files in a project.
 cd ~/src/mikemadden42
 fd linpack
 
+# Find all files with a certain name.
 fd passwd /etc
 
-cd
-fd . src/mikemadden42/beats-tester
-
+# Find files with a certain extension.
 cd ~/src/mikemadden42/beats-tester
 fd -e yml
 
+# Find & remove certain files.
 # https://en.wikipedia.org/wiki/.DS_Store
 fd -H '^\.DS_Store$' -tf
 fd -H '^\.DS_Store$' -tf -X rm
@@ -132,16 +139,22 @@ fd -H '^\.DS_Store$' -tf -X rm
 ```bash
 ffsend -h
 
+# Upload a file.
 ffsend upload cat.jpg
 
+# Check if a resource exists.
 ffsend exists URL
 
+# Get info on a resource.
 ffsend info URL
 
+# Delete a resource.
 ffsend delete URL
 
+# Set the password on a resource.
 ffsend password URL
 
+# Download a resource.
 ffsend download URL
 ```
 
