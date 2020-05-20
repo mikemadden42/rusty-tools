@@ -32,7 +32,11 @@ Many of these tools have similar, attractive themes:
 
 <https://github.com/Canop/broot>
 
+<https://github.com/bootandy/dust>
+
 <https://github.com/ogham/exa>
+
+<https://github.com/Edu4rdSHL/findomain>
 
 <https://github.com/sharkdp/fd>
 
@@ -96,6 +100,21 @@ Afterwards, you should start broot with br in order to use its full power.
 br
 ```
 
+## dust
+
+```bash
+dust -h
+
+# Display disk usage for a directory.
+dust src
+
+# No percent bars or percentages will be displayed.
+dust -b src
+
+# Print tree upside down (biggest highest).
+dust -br src
+```
+
 ## exa
 
 ```bash
@@ -110,6 +129,15 @@ exa -a
 # Display extended file metadata as a table.
 # Sort newest files.
 exa -l -snew
+```
+
+## findomain
+
+```bash
+findomain -h
+
+# Find subdomains and save output.
+findomain -t elastic.co -o
 ```
 
 ## fd
@@ -317,11 +345,7 @@ tokei -t JSON,TOML,YAML,XML .
 
 <https://github.com/uutils/coreutils>
 
-<https://github.com/bootandy/dust>
-
 <https://github.com/conky5/eq>
-
-<https://github.com/Edu4rdSHL/findomain>
 
 <https://github.com/sitkevij/hex>
 
