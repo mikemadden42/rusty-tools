@@ -163,6 +163,7 @@ ffsend download URL
 ```bash
 hexyl -h
 
+# Show first 256 bytes of a file.
 hexyl -n 256 cat.jpg
 ```
 
@@ -173,16 +174,22 @@ hexyl -n 256 cat.jpg
 ```bash
 lsd --help
 
+# Display one entry per line.
 lsd -1
 
+# Do not ignore entries starting with a dot.
 lsd -a
 
+# Display extended file metadata as a table.
 lsd -l
 
+# For ls compatibility purposes ONLY, currently set by default.
 lsd -lh
 
+# Sort by time modified.
 lsd -lht
 
+# Reverse the order of the sort.
 lsd -lhrt
 ```
 
@@ -191,14 +198,19 @@ lsd -lhrt
 ```bash
 rage -h
 
+# Encrypt with a passphrase instead of recipients.
 rage -p -o cat.jpg.age cat.jpg
 
-rage -d -p cat.jpg.age > cat2.jpg
+# Decrypt the input.
+rage -d cat.jpg.age > cat2.jpg
 
+# Calculate hash for cat images.
 gsha1sum cat*.jpg
 
+# Encrypt to a PEM encoded format.
 rage -p -a -o cat2.jpg.age cat.jpg
 
+# Display a PEM encoded file.
 bat cat2.jpg.age
 ```
 
@@ -209,10 +221,10 @@ rg -h
 ```
 
 Recursively searching your current working directory is the default mode of operation for ripgrep.
-This repo has 15+ millions lines of code and comments.  rg finds results in under a couple seconds.
+This repo has over 21 million lines of code and comments.  rg finds results in under a couple seconds.
 
 ```bash
-cd ~/src/mikemadden42/endpoint-dev
+cd ~/src/elastic/endpoint-dev
 rg GetComputerName
 ```
 
@@ -242,12 +254,17 @@ All of these things can be toggled using various flags provided by ripgrep:
 ```bash
 sd -h
 
-sed -i 's/1.13.5/1.13.6/g' README.md
+# Search and replace all occurances of 1.13.10 with 1.13.11.
+sd 1.13.10 1.13.11 README.md
+sd 1.13.10 1.13.11 go1.13/Makefile.common
+sd 1.13.10 1.13.11 go1.13/base/Dockerfile.tmpl
+sd 8a4cbc9f2b95d114c38f6cbe94a45372d48c604b707db2057c787398dfbf8e7f a4d71ca9e02923fa96669a4b5faf78ee8331b18e7209b09dd87fe763b4838ada go1.13/base/Dockerfile.tmpl
 
-sd 1.13.5 1.13.6 README.md
-sd 1.13.5 1.13.6 go1.13/Makefile.common
-sd 1.13.5 1.13.6 go1.13/base/Dockerfile.tmpl
-sd 512103d7ad296467814a6e3f635631bd35574cab3369a97a323c9a585ccaa569 a1bc06deb070155c4f67c579f896a45eeda5a8fa54f35ba233304074c4abbbbd go1.13/base/Dockerfile.tmpl
+# Search and replace all occurances of 1.14.2 with 1.14.2.
+sd 1.14.2 1.14.3 README.md
+sd 1.14.2 1.14.3 go1.14/Makefile.common
+sd 1.14.2 1.14.3 go1.14/base/Dockerfile.tmpl
+sd 6272d6e940ecb71ea5636ddb5fab3933e087c1356173c61f4a803895e947ebb3 1c39eac4ae95781b066c144c58e45d6859652247f7515f0d2cba7be7d57d2226 go1.14/base/Dockerfile.tmpl
 ```
 
 ## tokei
@@ -263,14 +280,18 @@ sd 512103d7ad296467814a6e3f635631bd35574cab3369a97a323c9a585ccaa569 a1bc06deb070
 ```bash
 tokei -h
 
+# Prints out supported languages and their extensions.
 tokei -l
 
-cd ~/go/src/github.com/elastic/beats
+cd ~/src/elastic/endpoint-dev
 
+# Show lines of code.
 tokei
 
+# Sort by lines of code.
 tokei -slines .
 
+# Only count common markup languages.
 tokei -t JSON,TOML,YAML,XML .
 ```
 
