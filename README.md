@@ -54,6 +54,10 @@ Many of these tools have similar, attractive themes:
 
 <https://github.com/XAMPPRocky/tokei>
 
+<https://github.com/endgameinc/xori>
+
+<https://github.com/cjbassi/ytop>
+
 ## bandwhich
 
 ```bash
@@ -323,6 +327,24 @@ tokei -slines .
 tokei -t JSON,TOML,YAML,XML .
 ```
 
+## xori
+
+```bash
+xori -h
+
+# Disassembly file.
+xori -f notepad.exe
+```
+
+## ytop
+
+```bash
+ytop -h
+
+# Prints out system usage.
+ytop
+```
+
 ## Other projects
 
 <https://github.com/trending/rust?since=daily>
@@ -375,11 +397,7 @@ tokei -t JSON,TOML,YAML,XML .
 
 <https://github.com/starship/starship>
 
-<https://github.com/endgameinc/xori>
-
 <https://github.com/yewstack/yew>
-
-<https://github.com/cjbassi/ytop>
 
 <https://github.com/bvaisvil/zenith>
 
